@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Build files
+dist/
+build/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Vite/React cache
+.vite/
+.vscode/
+
+# Others (adjust if needed)
+*.local
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+coverage/

@@ -1,0 +1,31 @@
+.rootLayout {
+    padding: 16px 64px; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.primus-logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 52px;
+    font-weight: 400;
+    color: pink
+  }
+  
+  
+
+main {
+    overflow: hidden;
+    flex: 1;
+}
