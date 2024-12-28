@@ -1,6 +1,19 @@
-.signInPage{
-    height: 100%;
+.signInPage {
+    height: 100vh; /* Use viewport height for better responsiveness */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px; /* Add some padding for smaller screens */
+}
+
+@media (max-width: 768px) {
+    .signInPage {
+        padding: 15px; /* Adjust padding for tablets and smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .signInPage {
+        padding: 10px; /* Further reduce padding for small mobile screens */
+    }
 }
