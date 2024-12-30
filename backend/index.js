@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 
   if (isMobile) {
     // Redirect or send a custom response for mobile devices
-    res.status(400).send('This website is not optimized for mobile devices.'); 
+    res.status(400).send('This website is not optimized for mobile devices. Kindly use a desktop, thanks!!'); 
     return;
   }
 
