@@ -27,6 +27,17 @@ app.use(
   })
 );
 
+app.use((req, res, next) => {
+  const isMobile = req.headers['user-agent'].match(/Mobi/i) != null; 
+
+  if (isMobile) {
+    // Redirect or send a custom response for mobile devices
+    res.status(400).send('This website is not optimized for mobile devices.'); 
+    return;
+  }
+
+  next(); // Proceed to the next middleware or route handler
+});
 
 
 
