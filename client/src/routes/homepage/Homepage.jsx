@@ -1,11 +1,15 @@
 import { TypeAnimation } from 'react-type-animation'
 import './homepage.css'
 import { Link } from 'react-router-dom'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Homepage = () => {
 
     const [typingStatus, setTypingStatus] = useState('human1')
+
+    useEffect(() => {
+        alert('Please operate on desktop, as the website is not configured for mobile.');
+    }, []);
     
     
 
